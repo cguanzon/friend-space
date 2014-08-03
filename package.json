@@ -1,0 +1,30 @@
+{
+  "name": "friend-space",
+  "version": "1.0.0",
+  "description": "This is a server-client interaction demo",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cguanzon/friend-space.git"
+  },
+  "keywords": [
+    "api",
+    "node",
+    "angular"
+  ],
+  "author": "Caleb Guanzon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cguanzon/friend-space/issues"
+  },
+  "homepage": "https://github.com/cguanzon/friend-space",
+  "dependencies": {
+    "body-parser": "^1.5.2",
+    "express": "^4.7.2",
+    "http-server": "^0.6.1"
+  }
+}

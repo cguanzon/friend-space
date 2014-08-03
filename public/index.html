@@ -1,0 +1,44 @@
+<!DOCTYPE = html>
+<html>
+<head>
+	<title>FriendSpace</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.21/angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<body ng-app="FriendSpaceApp">	
+	<div class="container" ng-controller="UserController">
+		<div class="jumbotron">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				    <h5 class="panel-title">You: {{personalInfo.name}}</h5>
+				</div>
+				<div class="panel-body">
+				    <ul>
+				    	<li>Height: {{personalInfo.height}}</li>
+				    	<li>Age: {{personalInfo.age}}</li>
+				    	<li>Favorite Movie: {{personalInfo.favoiteMovie}}</li>
+				    	<li>Favorite Artist: {{personalInfo.favoriteArtist}}</li>
+				    	<li>Favorite Food: {{personalInfo.favoriteFood}}</li>
+				    </ul>
+				</div>
+			</div>
+			<div class="panel panel-default" ng-repeat="friend in friends">
+				<div class="panel-heading">
+				    <h5 class="panel-title">Friend: {{friend.name}}</h5>
+				</div>
+				<div class="panel-body">
+				    <ul>
+				    	<li>Age: {{friend.age}}</li>
+				    	<li>Relation: {{friend.relation}}</li>
+				    </ul>
+				</div>
+			</div>`
+		</div>
+	</div>
+
+
+	<script type="text/javascript" src="./scripts/app.js"></script>
+	<script type="text/javascript" src="./scripts/userController.js"></script>
+	<script type="text/javascript" src="./scripts/userService.js"></script>
+</body>
+</html>
